@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const bcrypt = require('bcrypt')
 const User = require('../models/User')
 
-router.post('./', (req, res, next) => {
+router.post('/', (req, res, next) => {
     // res.status(200).json({ message: 'Message received from post on /api/signUp' })
     User.find({ email: req.body.email })
         .exec()

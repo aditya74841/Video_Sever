@@ -22,7 +22,7 @@ router.post('/', (req, res, next) => {
                 if (result) {
                     return res.status(200).json({
                         message: 'Auth successful',
-                        token: token
+                        // token: token
                     });
                 }
                 res.status(401).json({
